@@ -1,0 +1,27 @@
+.Enter {
+  display: grid;
+  opacity: 0;
+}
+
+.EnterActive {
+  display: grid;
+  animation: fade 500ms ease-in-out normal;
+}
+
+.Exit {
+  display: grid;
+  opacity: 1;
+}
+
+.ExitActive {
+  animation: fade 500ms ease-in-out reverse;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
